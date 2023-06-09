@@ -1,0 +1,69 @@
+------------------------------------------------------------------
+■ ■ AIRBODY ■ ■
+------------------------------------------------------------------
+Node coordinate list:
+      X        Y        Z
+p = [ 0.00000, 0.21651,-0.12500;...
+     -0.18750, 0.10825,-0.12500;...
+      0.00000, 0.21651, 0.12500;...
+     -0.18750, 0.10825, 0.12500;...
+      0.00000, 0.00000,-0.25000];
+------------------------------------------------------------------
+Triangle-to-node connectivity:
+     n1   n2   n3   type label
+t = [1,   2,   3,   2,   1;...
+     3,   2,   4,   2,   1;...
+     1,   5,   2,   2,   1];
+------------------------------------------------------------------
+RWG connectivity:
+       T+   T-   le+  le-  gn1  gn2  gfv+ gfv- BC   basis_idx
+rwg = [1,   2,   1,   3,   2,   3,   1,   4,   4,   1;...
+       1,   3,   3,   2,   2,   1,   3,   5,   4,   2];
+------------------------------------------------------------------
+Field basis function selection:            mb = 1
+Source basis function selection:           nb = 2
+Number of extacted singular terms:         Nl = 2;
+Control flag for singularity extraction:   doextract = 1;
+Number of field integration points:        Nf = 52;
+Number of source integration points:       Ns = 33;
+Wavenumber of operation (rad/sec):         k = 0.500068622237671
+------------------------------------------------------------------
+interaction (1,2)(++)
+------------------------------------------------------------------
+Triangles interacting:
+ >> Tf 1 with local edge 1
+ >> Ts 1 with local edge 3
+Cross potential interaction:  Ic(++) =  0
+Principal Value interaction:  Ii(++) =  0.011934059570759
+------------------------------------------------------------------
+interaction (1,2)(+-)
+------------------------------------------------------------------
+Triangles interacting:
+ >> Tf 1 with local edge 1
+ >> Ts 3 with local edge 2
+Cross potential interaction:  Ic(+-) = -9.045908919872610e-04 + 6.689013447288454e-08i
+Principal Value interaction:  Ii(+-) =  0
+------------------------------------------------------------------
+interaction (1,2)(-+)
+------------------------------------------------------------------
+Triangles interacting:
+ >> Tf 2 with local edge 3
+ >> Ts 1 with local edge 3
+Cross potential interaction:  Ic(-+) = 8.746103462311684e-06 - 4.454055904755894e-24i
+Principal Value interaction:  Ii(-+) = 0
+------------------------------------------------------------------
+interaction (1,2)(--)
+------------------------------------------------------------------
+Triangles interacting:
+ >> Tf 2 with local edge 3
+ >> Ts 3 with local edge 2
+Cross potential interaction:  Ic(--) =  3.125997895033731e-05 - 6.683197707713129e-08i
+Principal Value interaction:  Ii(--) =  0
+------------------------------------------------------------------
+Overall interaction (1,2) [ (++) - (+-) - (-+) + (--) ]
+------------------------------------------------------------------
+Ic =  9.271047674752867e-04 - 1.337221115500158e-07i
+Ii =  0.011934059570759     + 0.000000000000000i
+K(1,2)_side1 = Ic + 0.5*Ii =  0.006894134552855 - 0.000000133722112i
+K(1,2)_side2 = Ic - 0.5*Ii = -0.005039925017904 - 0.000000133722112i
+------------------------------------------------------------------

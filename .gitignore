@@ -1,0 +1,5 @@
+# ignore ALL [*.asv] files
+*.asv
+
+# ignore ALL [*.vs] files
+*.vs
